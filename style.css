@@ -57,6 +57,18 @@ a {
 .brand h1 span {
 	color: crimson;
 }
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+}
+.column img {
+  margin-top: 12px;
+  border-radius: 8px
+}
+.row{
+	font-size: 13px;
+}
 
 /* Header section */
 #header {
@@ -323,15 +335,3 @@ a {
 	}
 	/* End header*/
 	
-.column {
-  float: left;
-  width: 33%;
-  padding: 10px;
-}
-.column img {
-  margin-top: 12px;
-  border-radius: 8px
-}
-.row{
-	font-size: 13px;
-}
