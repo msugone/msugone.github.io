@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Mariana Sugoneaco</title>
 </head>
-<body>
+<body style="background-color: #0e272c;">
 	<section id="header">
 		<div class="header container">
 		  <div class="nav-bar">
@@ -31,115 +31,34 @@
 	</section>
 	
 	<section id="main">
-		
-			<h1>Pictures</h1>
-			<br>
-			<h1>These pictures were taken during an open-air concert in Brussels.</h1>
-			<h1>I am fascinated by the energy and enthusiasm of the people captured in the pictures.</h1>
-			<h1>They emanate passion and character.</h2>
-			<br>
-	
-		
-		<div class="slideshow-container">
-
-			<div class="mySlides fade">
-			  <div class="numbertext">1 / 10</div>
-			  <img src="photo/1.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">2 / 10</div>
-			  <img src="photo/2.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">3 / 10</div>
-			  <img src="photo/3.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">4 / 10</div>
-			  <img src="photo/4.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">5 / 10</div>
-			  <img src="photo/5.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">6 / 10</div>
-			  <img src="photo/6.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">7 / 10</div>
-			  <img src="photo/7.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">8 / 10</div>
-			  <img src="photo/8.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">9 / 10</div>
-			  <img src="photo/9.jpg" style="width:100%">
-			</div>
-
-			<div class="mySlides fade">
-			  <div class="numbertext">10 / 10</div>
-			  <img src="photo/10.jpg" style="width:100%">
-			</div>
-
-
-			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+	<div class="row"> 
+		<h1 style="font-size: 30px; color: #52b788;">Brussels</h1>
+		<h1 style="font-size: 15px; color: #52b788;">2021</h1>
+		<br>
+		<div class="column">
+			<img src="photo/1.jpg" style="width:100%">
+			<img src="photo/2.jpg" style="width:100%">
+			<img src="photo/3.jpg" style="width:100%">
+		</div>
+		<div class="column">
+			<img src="photo/4.jpg" style="width:100%">
+			<img src="photo/5.jpg" style="width:100%">
+			<img src="photo/6.jpg" style="width:100%">
+		</div>  
+		<div class="column">
+			<img src="photo/7.jpg" style="width:100%">
+			<img src="photo/8.jpg" style="width:100%">
+			<img src="photo/9.jpg" style="width:100%">
 		</div>
 		<br>
-
-		<div style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span> 
-			<span class="dot" onclick="currentSlide(2)"></span> 
-			<span class="dot" onclick="currentSlide(3)"></span>
-			<span class="dot" onclick="currentSlide(4)"></span>
-			<span class="dot" onclick="currentSlide(5)"></span>
-			<span class="dot" onclick="currentSlide(6)"></span>
-			<span class="dot" onclick="currentSlide(7)"></span>
-			<span class="dot" onclick="currentSlide(8)"></span>
-			<span class="dot" onclick="currentSlide(9)"></span>
-			<span class="dot" onclick="currentSlide(10)"></span>
+		<br>
+		<h1 style="color: #52b788;">This was a short outdoor concert.</h1>
+		<h1 style="color: #52b788;">Grunge, punk, and rock music lovers in a few minutes had filled the entire street.</h1>
+		<br>
+		<h1 style="color: #52b788;">What captivates my attention in these pictures is the energy emanated by people.</h1>
+		<h1 style="color: #52b788;">They are full of enthusiasm and passion.</h1>
+		<h1 style="color: #52b788;">That's what I look for in every frame I make.</h1> 
 		</div>
-
-		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			function plusSlides(n) {
-			  showSlides(slideIndex += n);
-			}
-
-			function currentSlide(n) {
-			  showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			  var i;
-			  var slides = document.getElementsByClassName("mySlides");
-			  var dots = document.getElementsByClassName("dot");
-			  if (n > slides.length) {slideIndex = 1}    
-			  if (n < 1) {slideIndex = slides.length}
-			  for (i = 0; i < slides.length; i++) {
-				  slides[i].style.display = "none";  
-			  }
-			  for (i = 0; i < dots.length; i++) {
-				  dots[i].className = dots[i].className.replace(" active", "");
-			  }
-			  slides[slideIndex-1].style.display = "block";  
-			  dots[slideIndex-1].className += " active";
-			}
-		</script>
 	</section>
 </body>
 
